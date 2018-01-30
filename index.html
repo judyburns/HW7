@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HW7</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>JavaScript HW7</h2>
+
+<p>Display the volume from a length, width, and height.</p>
+
+<script>
+/*
+ * Cleveland Codes - HW7
+ *
+ * This script will display the volume to the user using document.write();
+ *
+ */
+ function startProcess (){
+	var length = 3;
+	var width = 6;
+	var height = 9;
+	var result = getVolume(length,width,height);
+	document.write("The Volume is " + result);
+ }
+ function getVolume(length,width,height) {
+	var result = length * width * height;
+	return result;
+}
+startProcess();
+ </script>
+ 
+ </body>
+ </html>
